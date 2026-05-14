@@ -36,19 +36,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
 
-html, body {
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
   position: relative;
-  overscroll-behavior-y: none; /* Prevents rubber banding on mobile */
-}
-
-body {
+  overscroll-behavior-y: none;
   font-family: var(--font-sans);
   background-color: var(--color-bg);
   color: var(--color-text);
@@ -114,6 +118,8 @@ button {
   border-radius: 9999px;
   font-weight: 500;
   transition: all 0.3s ease;
+  white-space: nowrap;
+  max-width: 100%;
 }
 
 .btn-primary {
