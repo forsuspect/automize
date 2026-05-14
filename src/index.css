@@ -40,19 +40,14 @@
 }
 
 html {
-  overflow-x: hidden;
   scroll-behavior: smooth;
   -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  width: 100%;
-  min-height: 100vh;
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  position: relative;
-  overscroll-behavior-y: none;
+  overflow-x: hidden; /* Only hide horizontal to allow vertical scroll */
   font-family: var(--font-sans);
   background-color: var(--color-bg);
   color: var(--color-text);
