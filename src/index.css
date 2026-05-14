@@ -73,12 +73,22 @@ button {
   cursor: pointer;
 }
 
-/* Utilities */
+/* Ensure seamless background continuity */
+section, .section {
+  background: transparent !important;
+  border-top: none !important;
+  border-bottom: none !important;
+  position: relative;
+  overflow: visible !important; /* Allow background orbs to bleed through */
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 2rem;
+  position: relative;
+  z-index: 1;
 }
 
 .text-gradient {
