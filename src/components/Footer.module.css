@@ -126,6 +126,36 @@
   font-size: 0.875rem;
 }
 
+@media (max-width: 768px) {
+  .footer {
+    padding: 2rem 0 1.5rem 0;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  .brandCol {
+    grid-column: span 2;
+    gap: 1rem;
+    text-align: center;
+    align-items: center;
+  }
+  .brandDesc {
+    max-width: 100%;
+  }
+  .socialLinks {
+    justify-content: center;
+  }
+  .linksTitle {
+    font-size: 1rem;
+    margin-bottom: 0.25rem;
+  }
+  .linksCol {
+    gap: 0.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .bottom {
     flex-direction: row;
